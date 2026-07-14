@@ -15,6 +15,9 @@ let router = createBrowserRouter([
     path: "/",
     element: <Home />,
   },
+  {
+    basename: "/aerisconsultinggroup/",
+  },
 ]);
 
 createRoot(document.getElementById("root")).render(
