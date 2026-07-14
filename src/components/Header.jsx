@@ -1,0 +1,63 @@
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import Button from "react-bootstrap/Button";
+
+export default function Header() {
+  return (
+    <>
+      <header className="bg-dark sticky-top">
+        <Container fluid="xxl">
+          <Navbar data-bs-theme="dark">
+            <Navbar.Brand href="/" preventScrollReset={true}>
+              <img
+                src="./src/assets/logos/aeris-group-logo.svg"
+                alt="Aeris Consulting Group logo"
+                height="100"
+                width="200"
+              />
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls="navbar" />
+            <Navbar.Collapse id="navbar">
+              <Nav activeKey={location.pathname} className="ms-auto">
+                <Nav.Link
+                  eventKey="/"
+                  href="/"
+                  className="me-4"
+                  preventScrollReset={true}
+                >
+                  Home
+                </Nav.Link>
+                <Nav.Link
+                  eventKey="/programs"
+                  href="/programs"
+                  className="me-4"
+                  preventScrollReset={true}
+                >
+                  Programs
+                </Nav.Link>
+                <Nav.Link
+                  eventKey="/about"
+                  href="/about"
+                  className="me-4"
+                  preventScrollReset={true}
+                >
+                  About Us
+                </Nav.Link>
+                <Button
+                  as="a"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLScVrmdtJWfVt5fHXNb48BckDf6E8YxA3FyDwFxzATxGExJTLg/viewform"
+                  target="_blank"
+                  variant="primary"
+                  preventScrollReset={true}
+                >
+                  Become a Peer Support Specialist
+                </Button>
+              </Nav>
+            </Navbar.Collapse>
+          </Navbar>
+        </Container>
+      </header>
+    </>
+  );
+}
