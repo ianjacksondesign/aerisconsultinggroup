@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { createHashRouter, HashProvider } from "react-router";
+import { createHashRouter, RouterProvider } from "react-router";
 // Pages
 import Home from "./pages/Home";
 // Components
@@ -24,7 +24,7 @@ createRoot(document.getElementById("root")).render(
   <StrictMode>
     <Header />
     <main>
-      <HashProvider router={router} />
+      <RouterProvider router={router} />
     </main>
     <Footer />
   </StrictMode>,
