@@ -12,7 +12,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 
 let router = createBrowserRouter([
   {
-    path: "/aerisconsultinggroup/",
+    path: "/",
     element: <Home />,
   },
 ]);
