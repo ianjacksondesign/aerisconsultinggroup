@@ -21095,7 +21095,7 @@ textarea.form-control-lg {
   color: white;
   display: flex;
   align-items: center;
-  background: linear-gradient(70deg, rgba(0, 32, 96, 0.8) 0%, rgba(0, 32, 96, 0.8) 50%, rgba(0, 32, 96, 0) 50%), url("/everyone-gets-a-turn-to-share-their-story-web-ready.jpg");
+  background: linear-gradient(70deg, rgba(0, 32, 96, 0.8) 0%, rgba(0, 32, 96, 0.8) 50%, rgba(0, 32, 96, 0) 50%), url("../images/everyone-gets-a-turn-to-share-their-story-web-ready.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -21107,7 +21107,7 @@ textarea.form-control-lg {
 }
 
 #homeWhatWeDo {
-  background: linear-gradient(290deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, rgb(255, 255, 255) 50%), url("/people-in-a-supportive-meeting-group-web-ready.jpg");
+  background: linear-gradient(290deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, rgb(255, 255, 255) 50%), url("../images/people-in-a-supportive-meeting-group-web-ready.jpg");
   background-size: contain;
   background-position: center right;
   background-repeat: no-repeat;
@@ -21115,7 +21115,7 @@ textarea.form-control-lg {
 
 #homeGetCertified {
   background-color: var(--bs-blue);
-  background-image: url("/src/assets/logos/masterkey-icon-white-25.png");
+  background-image: url("../logos/masterkey-icon-white-25.png");
   background-blend-mode: soft-light;
   background-size: contain;
   background-position: center left;
