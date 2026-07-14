@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router";
+import { createHashRouter, HashProvider } from "react-router";
 // Pages
 import Home from "./pages/Home";
 // Components
@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 import "./assets/scss/custom.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
-let router = createBrowserRouter([
+let router = createHashRouter([
   {
     path: "/",
     element: <Home />,
@@ -24,7 +24,7 @@ createRoot(document.getElementById("root")).render(
   <StrictMode>
     <Header />
     <main>
-      <RouterProvider router={router} />
+      <HashProvider router={router} />
     </main>
     <Footer />
   </StrictMode>,
