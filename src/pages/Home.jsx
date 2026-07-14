@@ -3,6 +3,11 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import cpfsLogo from "/src/assets/images/cpfs.png";
+import ncprssLogo from "/src/assets/images/ncprss.png";
+import forestHeadshot from "/src/assets/images/forest-mangus.png";
+import jdHeadshot from "/src/assets/images/jd-kirkness.png";
+import nathanHeadshot from "/src/assets/images/nathan-finnegan.png";
 
 export default function Home() {
   return (
@@ -46,14 +51,14 @@ export default function Home() {
           <Row className="justify-content-center align-items-center">
             <Col lg={3}>
               <img
-                src="/cpfs.png"
+                src={cpfsLogo}
                 alt="Colorado Peer and Family Specialist logo"
                 className="w-100"
               />
             </Col>
             <Col lg={3}>
               <img
-                src="/ncprss.png"
+                src={ncprssLogo}
                 alt="National Certified Peer Recovery Support Specialist logo"
                 className="w-100"
               />
@@ -155,7 +160,7 @@ export default function Home() {
             <Col lg={4}>
               <div className="d-flex flex-column justify-content-center text-center">
                 <img
-                  src="/forest-mangus.png"
+                  src={forestHeadshot}
                   alt="Headshot of Forest Mangus"
                   className="rounded-circle bg-primary-subtle mb-3"
                 />
@@ -166,7 +171,7 @@ export default function Home() {
             <Col lg={4}>
               <div className="d-flex flex-column justify-content-center text-center">
                 <img
-                  src="/jd-kirkness.png"
+                  src={jdHeadshot}
                   alt="Headshot of JD Kirkness"
                   className="rounded-circle bg-primary-subtle mb-3"
                 />
@@ -177,7 +182,7 @@ export default function Home() {
             <Col lg={4}>
               <div className="d-flex flex-column justify-content-center text-center">
                 <img
-                  src="/nathan-finnegan.png"
+                  src={nathanHeadshot}
                   alt="Headshot of Nathan Finnegan"
                   className="rounded-circle bg-primary-subtle mb-3"
                 />

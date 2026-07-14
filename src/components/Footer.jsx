@@ -3,6 +3,9 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Nav from "react-bootstrap/Nav";
 import Stack from "react-bootstrap/Stack";
+import aerisLogo from "/src/assets/logos/aeris-group-logo.svg";
+import cpfsLogo from "/src/assets/images/cpfs.png";
+import ncprssLogo from "/src/assets/images/ncprss.png";
 
 export default function Footer() {
   return (
@@ -12,7 +15,7 @@ export default function Footer() {
           <Row className="justify-content-between mb-5">
             <Col>
               <img
-                src="./src/assets/logos/aeris-group-logo.svg"
+                src={aerisLogo}
                 alt="Aeris Consulting Group logo"
                 height="100"
                 width="300"
@@ -56,12 +59,12 @@ export default function Footer() {
             <Col>
               <Stack>
                 <img
-                  src="/cpfs.png"
+                  src={cpfsLogo}
                   alt="Colorado Peer and Family Specialist logo"
                   className="w-50 mb-3"
                 />
                 <img
-                  src="/ncprss.png"
+                  src={ncprssLogo}
                   alt="National Certified Peer Recovery Support Specialist logo"
                   className="w-50"
                 />

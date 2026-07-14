@@ -2,6 +2,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
+import aerisLogo from "/src/assets/logos/aeris-group-logo.svg";
 
 export default function Header() {
   return (
@@ -11,7 +12,7 @@ export default function Header() {
           <Navbar data-bs-theme="dark">
             <Navbar.Brand href="/" preventScrollReset={true}>
               <img
-                src="./src/assets/logos/aeris-group-logo.svg"
+                src={aerisLogo}
                 alt="Aeris Consulting Group logo"
                 height="100"
                 width="200"
