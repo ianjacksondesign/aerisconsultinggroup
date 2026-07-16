@@ -1,0 +1,20 @@
+footer {
+  background-color: var(--bs-dark);
+}
+
+.footerNavHeader {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: var(--bs-primary);
+}
+
+.footerNavLink {
+  color: white;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.footerCopyright {
+  font-size: 0.75rem;
+  margin: 0;
+}

@@ -1,8 +1,11 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { createHashRouter, RouterProvider } from "react-router";
+import { createHashRouter, RouterProvider, Outlet } from "react-router";
 // Pages
 import Home from "./pages/Home";
+import Programs from "./pages/Programs";
+import About from "./pages/About";
+import PageNotFound from "./pages/PageNotFound";
 // Components
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -10,10 +13,26 @@ import Footer from "./components/Footer";
 import "./assets/scss/custom.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
-let router = createHashRouter([
+const Layout = () => (
+  <div className="pageWrapper">
+    <Header />
+    <main>
+      <Outlet />
+    </main>
+    <Footer />
+  </div>
+);
+
+const router = createHashRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <Layout />,
+    children: [
+      { path: "/", element: <Home /> },
+      { path: "/programs", element: <Programs /> },
+      { path: "/about", element: <About /> },
+      { path: "*", element: <PageNotFound /> },
+    ],
   },
   {
     basename: "/aerisconsultinggroup/",
@@ -22,10 +41,6 @@ let router = createHashRouter([
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <Header />
-    <main>
-      <RouterProvider router={router} />
-    </main>
-    <Footer />
+    <RouterProvider router={router} />
   </StrictMode>,
 );

@@ -13,7 +13,7 @@ $display-font-weight: 700;
 
 // Buttons
 $input-btn-padding-y: 0.5rem;
-$input-btn-padding-x: 1rem;
+$input-btn-padding-x: 1.5rem;
 $btn-border-radius-lg: 0.25rem;
 
 // Include Bootstrap functions and variables
@@ -40,104 +40,22 @@ $bootstrap-icons-font-dir: "~bootstrap-icons/font/fonts";
 @import "~bootstrap/scss/bootstrap";
 @import "~bootstrap-icons/font/bootstrap-icons";
 
-// Homepage
-#homeHero {
-  color: white;
-  display: flex;
-  align-items: center;
-  background:
-    linear-gradient(
-      70deg,
-      rgba(0, 32, 96, 0.8) 0%,
-      rgba(0, 32, 96, 0.8) 50%,
-      rgba(0, 32, 96, 0) 50%
-    ),
-    url("../images/everyone-gets-a-turn-to-share-their-story-web-ready.jpg");
+// Mixins
+@mixin fullImageBackground {
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 60vh;
-}
-
-#homeAffiliation {
-  background-color: var(--bs-primary-bg-subtle);
-}
-
-#homeWhatWeDo {
-  background:
-    linear-gradient(
-      290deg,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 0) 50%,
-      rgba(255, 255, 255, 1) 50%
-    ),
-    url("../images/people-in-a-supportive-meeting-group-web-ready.jpg");
-  background-size: contain;
-  background-position: center right;
+  background-position: center center;
   background-repeat: no-repeat;
 }
 
-#homeGetCertified {
-  background-color: var(--bs-blue);
-  background-image: url("../logos/masterkey-icon-white-25.png");
-  background-blend-mode: soft-light;
-  background-size: contain;
-  background-position: center left;
-  background-repeat: no-repeat;
-  color: white;
+// Custom code
+@import "./home";
+@import "./programs";
+@import "./footer";
+
+h1 {
+  font-size: 3rem;
 }
 
-.prehead {
-  text-transform: uppercase;
-}
-
-.statCard {
-  background-color: shade-color($blue, 75%);
-  color: var(--bs-blue-text-emphasis);
-  text-align: center;
-  line-height: 0.5rem;
-  border: 4px solid var(--bs-primary);
-  border-radius: 1rem;
-  padding: 1.5rem;
-}
-
-.statCardNumber {
-  font-size: 4rem;
-  color: tint-color($primary, 50%);
-}
-
-.statCardSubHead {
-  font-weight: normal;
-  font-size: 1rem;
-}
-
-#homeNextSteps {
-  background:
-    linear-gradient(0deg, rgba(0, 32, 96, 0.8) 0%),
-    url("../images/people-sitting-together-discussing-issues-indoors-web-ready.jpg");
-  background-size: cover;
-  background-position: center left;
-  background-repeat: no-repeat;
-  color: white;
-}
-
-footer {
-  background-color: var(--bs-dark);
-}
-
-.footerNavHeader {
-  font-size: 1rem;
-  text-transform: uppercase;
-  color: var(--bs-primary);
-}
-
-.footerNavLink {
-  color: white;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.footerCopyright {
-  font-size: 0.75rem;
-  margin: 0;
+p:last-of-type {
+  margin-bottom: 0;
 }

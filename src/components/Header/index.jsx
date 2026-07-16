@@ -1,6 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
 import Button from "react-bootstrap/Button";
 import aerisLogo from "/src/assets/logos/aeris-group-logo.svg";
 
@@ -29,17 +30,18 @@ export default function Header() {
                 >
                   Home
                 </Nav.Link>
+                <NavDropdown title="Programs" className="me-4">
+                  <NavDropdown.Item
+                    href="#/programs"
+                    eventKey="programs"
+                    preventScrollReset={true}
+                  >
+                    Masterkey Professional (APRS)
+                  </NavDropdown.Item>
+                </NavDropdown>
                 <Nav.Link
-                  eventKey="/programs"
-                  href="/programs"
-                  className="me-4"
-                  preventScrollReset={true}
-                >
-                  Programs
-                </Nav.Link>
-                <Nav.Link
-                  eventKey="/about"
-                  href="/about"
+                  eventKey="about"
+                  href="#/about"
                   className="me-4"
                   preventScrollReset={true}
                 >

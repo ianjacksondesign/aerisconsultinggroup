@@ -1,13 +1,20 @@
+// Bootstrap
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import Carousel from "react-bootstrap/Carousel";
+import Image from "react-bootstrap/Image";
+// Assets
 import cpfsLogo from "/src/assets/images/cpfs.png";
 import ncprssLogo from "/src/assets/images/ncprss.png";
 import forestHeadshot from "/src/assets/images/forest-mangus.png";
 import jdHeadshot from "/src/assets/images/jd-kirkness.png";
 import nathanHeadshot from "/src/assets/images/nathan-finnegan.png";
+import kalaSederstromHeadshot from "/src/assets/images/kala-sederstrom.jpg";
+import samFeaginHeadshot from "/src/assets/images/sam-feagin.jpg";
+import kelseyGorskiHeadshot from "/src/assets/images/kelsey-gorski.jpg";
 
 export default function Home() {
   return (
@@ -46,8 +53,8 @@ export default function Home() {
           </Row>
         </Container>
       </section>
-      <section id="homeAffiliation" className="py-5">
-        <Container>
+      <section id="homeAffiliation">
+        <Container className="py-5">
           <Row className="justify-content-center align-items-center">
             <Col lg={3}>
               <img
@@ -153,42 +160,102 @@ export default function Home() {
           </Row>
         </Container>
       </section>
-      <section id="homeTeam">
+      <section id="homeTestimonials">
         <Container className="py-5 py-lg-6">
-          <h2 className="text-center mb-5">Meet the Team</h2>
-          <Row>
+          <Row className="justify-content-between align-items-center">
             <Col lg={4}>
-              <div className="d-flex flex-column justify-content-center text-center">
-                <img
-                  src={forestHeadshot}
-                  alt="Headshot of Forest Mangus"
-                  className="rounded-circle bg-primary-subtle mb-3"
-                />
-                <h3 className="mb-1">Forest Mangus</h3>
-                <p>Director of Operations</p>
-              </div>
+              <p className="prehead">Testimonials</p>
+              <h2>Hear From Our Recent Graduates</h2>
             </Col>
-            <Col lg={4}>
-              <div className="d-flex flex-column justify-content-center text-center">
-                <img
-                  src={jdHeadshot}
-                  alt="Headshot of JD Kirkness"
-                  className="rounded-circle bg-primary-subtle mb-3"
-                />
-                <h3 className="mb-1">JD Kirkness</h3>
-                <p>Director of Training and Development</p>
-              </div>
-            </Col>
-            <Col lg={4}>
-              <div className="d-flex flex-column justify-content-center text-center">
-                <img
-                  src={nathanHeadshot}
-                  alt="Headshot of Nathan Finnegan"
-                  className="rounded-circle bg-primary-subtle mb-3"
-                />
-                <h3 className="mb-1">Nathan Finnegan</h3>
-                <p>Masterkey Certified Instructor</p>
-              </div>
+            <Col lg={7}>
+              <Carousel className="testimonialSlider">
+                <Carousel.Item>
+                  <Row>
+                    <Col lg={3}>
+                      <Image
+                        src={kalaSederstromHeadshot}
+                        roundedCircle
+                        className="w-100"
+                      />
+                    </Col>
+                    <Col lg={9}>
+                      <div className="mb-3">
+                        <i className="bi bi-star-fill testimonialStars"></i>
+                        <i className="bi bi-star-fill testimonialStars"></i>
+                        <i className="bi bi-star-fill testimonialStars"></i>
+                        <i className="bi bi-star-fill testimonialStars"></i>
+                        <i className="bi bi-star-fill testimonialStars"></i>
+                      </div>
+                      <p className="testimonialText">
+                        Through these classes, I gained a deeper understanding
+                        of the importance of identifying and accessing
+                        appropriate resources to support individuals in a
+                        variety of situations. I also developed greater
+                        confidence in being authentic and sharing my personal
+                        growth while learning alongside like-minded peers.
+                      </p>
+                      <p className="testimonialName">Kala Sederstrom</p>
+                    </Col>
+                  </Row>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <Row>
+                    <Col lg={3}>
+                      <Image
+                        src={samFeaginHeadshot}
+                        roundedCircle
+                        className="w-100"
+                      />
+                    </Col>
+                    <Col lg={9}>
+                      <div className="mb-3">
+                        <i className="bi bi-star-fill testimonialStars"></i>
+                        <i className="bi bi-star-fill testimonialStars"></i>
+                        <i className="bi bi-star-fill testimonialStars"></i>
+                        <i className="bi bi-star-fill testimonialStars"></i>
+                        <i className="bi bi-star-fill testimonialStars"></i>
+                      </div>
+                      <p className="testimonialText">
+                        Not only did this training prepare me to better help
+                        others in recovery, but it also strengthened my own
+                        recovery journey in ways I never expected. The
+                        knowledge, skills, and connections I gained through this
+                        program have been life-changing.
+                      </p>
+                      <p className="testimonialName">Sam Feagin</p>
+                    </Col>
+                  </Row>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <Row>
+                    <Col lg={3}>
+                      <Image
+                        src={kelseyGorskiHeadshot}
+                        roundedCircle
+                        className="w-100"
+                      />
+                    </Col>
+                    <Col lg={9}>
+                      <div className="mb-3">
+                        <i className="bi bi-star-fill testimonialStars"></i>
+                        <i className="bi bi-star-fill testimonialStars"></i>
+                        <i className="bi bi-star-fill testimonialStars"></i>
+                        <i className="bi bi-star-fill testimonialStars"></i>
+                        <i className="bi bi-star-fill testimonialStars"></i>
+                      </div>
+                      <p className="testimonialText">
+                        Through this program, I have gained valuable knowledge,
+                        confidence, and communication skills that have
+                        strengthened my ability to serve as a future
+                        Professional Peer Specialist. I am passionate about
+                        helping others and saving lives, and this training has
+                        reinforced that commitment.
+                      </p>
+                      <p className="testimonialName">Kelsey Gorski</p>
+                    </Col>
+                  </Row>
+                </Carousel.Item>
+              </Carousel>
             </Col>
           </Row>
         </Container>

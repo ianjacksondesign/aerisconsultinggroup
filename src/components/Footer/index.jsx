@@ -74,8 +74,8 @@ export default function Footer() {
           <Row className="justify-content-between align-items-center text-white">
             <Col xs="auto">
               <p className="footerCopyright">
-                Copyright <i class="bi bi-c-circle"></i> 2026 Aeris Consulting
-                Group USA
+                Copyright <i className="bi bi-c-circle"></i> 2026 Aeris
+                Consulting Group USA
               </p>
             </Col>
             <Col>
@@ -84,19 +84,19 @@ export default function Footer() {
             <Col xs="auto">
               <Row>
                 <Col md="auto">
-                  <i class="bi bi-facebook"></i>
+                  <i className="bi bi-facebook"></i>
                 </Col>
                 <Col md="auto">
-                  <i class="bi bi-instagram"></i>
+                  <i className="bi bi-instagram"></i>
                 </Col>
                 <Col md="auto">
-                  <i class="bi bi-linkedin"></i>
+                  <i className="bi bi-linkedin"></i>
                 </Col>
                 <Col md="auto">
-                  <i class="bi bi-twitter-x"></i>
+                  <i className="bi bi-twitter-x"></i>
                 </Col>
                 <Col md="auto">
-                  <i class="bi bi-youtube"></i>
+                  <i className="bi bi-youtube"></i>
                 </Col>
               </Row>
             </Col>
