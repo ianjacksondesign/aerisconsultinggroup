@@ -12,34 +12,48 @@ export default function Footer() {
     <>
       <footer>
         <Container fluid="xl" className="pt-5 pt-lg-6 pb-3">
-          <Row className="justify-content-between mb-5">
+          <Row className="flex-column flex-md-row justify-content-between mb-5">
             <Col>
               <img
                 src={aerisLogo}
                 alt="Aeris Consulting Group logo"
                 height="100"
                 width="300"
+                className="w-100"
               />
             </Col>
-            <Col md="auto">
-              <Nav>
-                <Row>
+            <Col xs="auto" className="my-3 my-md-0">
+              <Nav className="justify-content-center">
+                <Row className="flex-column flex-md-row justify-content-center align-items-center align-items-md-start text-center text-md-start">
                   <Col>
                     <Nav.Item>
                       <h2 className="footerNavHeader">Programs</h2>
-                      <Nav.Link className="footerNavLink">
-                        Advanced Peer Recovery Specialist
+                      <Nav.Link className="footerNavLink" href="#/programs">
+                        Advanced Peer
+                        <br />
+                        Recovery Specialist
                       </Nav.Link>
                     </Nav.Item>
                   </Col>
                   <Col>
                     <Nav.Item>
                       <h2 className="footerNavHeader">Company</h2>
-                      <Nav.Link className="footerNavLink">About Us</Nav.Link>
-                      <Nav.Link className="footerNavLink">
+                      <Nav.Link
+                        className="footerNavLink"
+                        href="#/about#aboutus"
+                      >
+                        About Us
+                      </Nav.Link>
+                      <Nav.Link
+                        className="footerNavLink"
+                        href="#/about#mission"
+                      >
                         Mission Statement
                       </Nav.Link>
-                      <Nav.Link className="footerNavLink">
+                      <Nav.Link
+                        className="footerNavLink"
+                        href="#/about#instructors"
+                      >
                         Our Instructors
                       </Nav.Link>
                     </Nav.Item>
@@ -47,9 +61,16 @@ export default function Footer() {
                   <Col>
                     <Nav.Item>
                       <h2 className="footerNavHeader">Contact</h2>
-                      <Nav.Link className="footerNavLink">Address</Nav.Link>
-                      <Nav.Link className="footerNavLink">
-                        Email Address
+                      <Nav.Link
+                        className="footerNavLink"
+                        href="mailto:admin@masterkey.us"
+                      >
+                        admin@masterkey.us
+                      </Nav.Link>
+                      <Nav.Link className="footerNavLink text-white" disabled>
+                        P.O. Box 9322
+                        <br />
+                        Denver, CO 80209
                       </Nav.Link>
                     </Nav.Item>
                   </Col>
@@ -61,44 +82,44 @@ export default function Footer() {
                 <img
                   src={cpfsLogo}
                   alt="Colorado Peer and Family Specialist logo"
-                  className="w-50 mb-3"
+                  className="w-50 mb-3 mx-auto"
                 />
                 <img
                   src={ncprssLogo}
                   alt="National Certified Peer Recovery Support Specialist logo"
-                  className="w-50"
+                  className="w-50 mx-auto"
                 />
               </Stack>
             </Col>
           </Row>
-          <Row className="justify-content-between align-items-center text-white">
-            <Col xs="auto">
-              <p className="footerCopyright">
-                Copyright <i className="bi bi-c-circle"></i> 2026 Aeris
-                Consulting Group USA
-              </p>
-            </Col>
-            <Col>
-              <hr className="m-0" />
-            </Col>
-            <Col xs="auto">
-              <Row>
-                <Col md="auto">
+          <Row className="justify-content-center justify-content-md-between align-items-center text-white">
+            <Col md="auto">
+              <Row className="flex-nowrap justify-content-center">
+                <Col xs="auto">
                   <i className="bi bi-facebook"></i>
                 </Col>
-                <Col md="auto">
+                <Col xs="auto">
                   <i className="bi bi-instagram"></i>
                 </Col>
-                <Col md="auto">
+                <Col xs="auto">
                   <i className="bi bi-linkedin"></i>
                 </Col>
-                <Col md="auto">
+                <Col xs="auto">
                   <i className="bi bi-twitter-x"></i>
                 </Col>
-                <Col md="auto">
+                <Col xs="auto">
                   <i className="bi bi-youtube"></i>
                 </Col>
               </Row>
+            </Col>
+            <Col>
+              <hr className="my-3" />
+            </Col>
+            <Col md="auto">
+              <p className="footerCopyright text-center">
+                Copyright <i className="bi bi-c-circle"></i> 2026 Aeris
+                Consulting Group USA
+              </p>
             </Col>
           </Row>
         </Container>

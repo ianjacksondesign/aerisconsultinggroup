@@ -1,0 +1,17 @@
+.testimonials {
+  background: linear-gradient(
+    70deg,
+    rgba(230, 225, 208, 1) 0%,
+    rgba(230, 225, 208, 1) 50%,
+    rgba(255, 255, 255, 0) 50%
+  );
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  .prehead,
+  h2 {
+    text-align: right;
+  }
+}

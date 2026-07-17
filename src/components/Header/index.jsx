@@ -10,7 +10,7 @@ export default function Header() {
     <>
       <header className="bg-dark sticky-top">
         <Container fluid="xxl">
-          <Navbar data-bs-theme="dark">
+          <Navbar expand="lg" data-bs-theme="dark">
             <Navbar.Brand href="/" preventScrollReset={true}>
               <img
                 src={aerisLogo}

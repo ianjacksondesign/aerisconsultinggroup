@@ -1,0 +1,49 @@
+#aboutHero {
+  text-align: center;
+  background: url("/background-blue.jpg");
+  @include hero;
+}
+
+#aboutWhatWeDo {
+  background:
+    linear-gradient(
+      290deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0) 50%,
+      rgba(255, 255, 255, 1) 50%
+    ),
+    url("/man-smiles-with-group-session-in-the-background-web-ready.jpg");
+  background-size: contain;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+#aboutMission {
+  background: url("/background-black.jpg");
+  .prehead {
+    font-size: 1rem;
+  }
+  p {
+    color: white;
+  }
+}
+
+#aboutTeam {
+  .prehead {
+    text-align: center;
+  }
+}
+
+#aboutMission {
+  background: url("/background-black.jpg");
+}
+
+#aboutByTheNumbers {
+  background-image: url("/background-blue.jpg");
+  background-blend-mode: soft-light;
+  @include fullImageBackground;
+  color: white;
+  .prehead {
+    font-size: 1rem;
+  }
+}

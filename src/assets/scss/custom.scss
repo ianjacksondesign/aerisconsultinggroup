@@ -1,15 +1,24 @@
 // Overwriting Bootstrap Variables
 
 // Colors
-$primary: #826a12;
+$primary: #c7a348;
 $secondary: #7f7f7f;
-$dark: #000000;
+$dark: #121212;
 
 // Fonts
 $font-family-base: "Work Sans", sans-serif;
 $headings-font-family: "Work Sans", sans-serif;
 $headings-font-weight: 700;
 $display-font-weight: 700;
+$font-size-base: 1rem;
+
+// Headers
+$h1-font-size: $font-size-base * 3.5;
+$h2-font-size: $font-size-base * 2.25;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
 
 // Buttons
 $input-btn-padding-y: 0.5rem;
@@ -47,15 +56,40 @@ $bootstrap-icons-font-dir: "~bootstrap-icons/font/fonts";
   background-repeat: no-repeat;
 }
 
+@mixin hero {
+  color: white;
+  display: flex;
+  align-items: center;
+  @include fullImageBackground;
+  min-height: 70vh;
+}
+
 // Custom code
 @import "./home";
+@import "./about";
 @import "./programs";
 @import "./footer";
-
-h1 {
-  font-size: 3rem;
-}
+@import "./testimonials";
 
 p:last-of-type {
   margin-bottom: 0;
+}
+
+.btn {
+  font-weight: bold;
+}
+
+.prehead {
+  color: $primary;
+  font-weight: bold;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+
+.nextSteps {
+  background:
+    linear-gradient(0deg, rgba(0, 32, 96, 0.8) 0%),
+    url("/people-sitting-together-discussing-issues-indoors-web-ready.jpg");
+  @include fullImageBackground;
+  color: white;
 }

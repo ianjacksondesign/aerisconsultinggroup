@@ -9,11 +9,8 @@ import Image from "react-bootstrap/Image";
 // Assets
 import cpfsLogo from "/src/assets/images/cpfs.png";
 import ncprssLogo from "/src/assets/images/ncprss.png";
-import forestHeadshot from "/src/assets/images/forest-mangus.png";
-import jdHeadshot from "/src/assets/images/jd-kirkness.png";
-import nathanHeadshot from "/src/assets/images/nathan-finnegan.png";
 import kalaSederstromHeadshot from "/src/assets/images/kala-sederstrom.jpg";
-import samFeaginHeadshot from "/src/assets/images/sam-feagin.jpg";
+import samFeaginHeadshot from "/src/assets/images/kim-tudor.jpg";
 import kelseyGorskiHeadshot from "/src/assets/images/kelsey-gorski.jpg";
 
 export default function Home() {
@@ -44,7 +41,7 @@ export default function Home() {
                   </Button>
                 </Col>
                 <Col lg="auto">
-                  <Button as="a" href="/" variant="outline-light">
+                  <Button as="a" href="#/programs" variant="outline-light">
                     Learn More
                   </Button>
                 </Col>
@@ -147,10 +144,10 @@ export default function Home() {
                 <Col lg={6}>
                   <Card className="statCard">
                     <h3>
-                      <span className="statCardNumber">332</span>
+                      <span className="statCardNumber">4.8/5</span>
                       <br />
                       <span className="statCardSubHead">
-                        Certified Professional
+                        Average Satisfaction
                       </span>
                     </h3>
                   </Card>
@@ -160,7 +157,7 @@ export default function Home() {
           </Row>
         </Container>
       </section>
-      <section id="homeTestimonials">
+      <section id="homeTestimonials" className="testimonials">
         <Container className="py-5 py-lg-6">
           <Row className="justify-content-between align-items-center">
             <Col lg={4}>
@@ -169,7 +166,7 @@ export default function Home() {
             </Col>
             <Col lg={7}>
               <Carousel className="testimonialSlider">
-                <Carousel.Item>
+                <Carousel.Item className="h-100">
                   <Row>
                     <Col lg={3}>
                       <Image
@@ -198,7 +195,7 @@ export default function Home() {
                     </Col>
                   </Row>
                 </Carousel.Item>
-                <Carousel.Item>
+                <Carousel.Item className="h-100">
                   <Row>
                     <Col lg={3}>
                       <Image
@@ -226,7 +223,7 @@ export default function Home() {
                     </Col>
                   </Row>
                 </Carousel.Item>
-                <Carousel.Item>
+                <Carousel.Item className="h-100">
                   <Row>
                     <Col lg={3}>
                       <Image
@@ -260,7 +257,7 @@ export default function Home() {
           </Row>
         </Container>
       </section>
-      <section id="homeNextSteps">
+      <section id="homeNextSteps" className="nextSteps">
         <Container fluid="xl" className="text-center text-white py-5">
           <h2 className="mb-4">Ready to Take Your Next Steps?</h2>
           <Button
