@@ -232,20 +232,20 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 }
 
 h1, .h1 {
-  font-size: calc(1.475rem + 2.7vw);
+  font-size: calc(1.425rem + 2.1vw);
 }
 @media (min-width: 1200px) {
   h1, .h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 }
 
 h2, .h2 {
-  font-size: calc(1.35rem + 1.2vw);
+  font-size: calc(1.375rem + 1.5vw);
 }
 @media (min-width: 1200px) {
   h2, .h2 {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -8748,11 +8748,11 @@ textarea.form-control-lg {
 }
 
 .fs-1 {
-  font-size: calc(1.475rem + 2.7vw) !important;
+  font-size: calc(1.425rem + 2.1vw) !important;
 }
 
 .fs-2 {
-  font-size: calc(1.35rem + 1.2vw) !important;
+  font-size: calc(1.375rem + 1.5vw) !important;
 }
 
 .fs-3 {
@@ -12707,10 +12707,10 @@ textarea.form-control-lg {
 }
 @media (min-width: 1200px) {
   .fs-1 {
-    font-size: 3.5rem !important;
+    font-size: 3rem !important;
   }
   .fs-2 {
-    font-size: 2.25rem !important;
+    font-size: 2.5rem !important;
   }
   .fs-3 {
     font-size: 1.75rem !important;
@@ -21092,14 +21092,14 @@ textarea.form-control-lg {
 }
 
 #homeHero {
-  background: linear-gradient(70deg, rgba(0, 32, 96, 0.8) 0%, rgba(0, 32, 96, 0.8) 50%, rgba(0, 32, 96, 0) 50%), url("/everyone-gets-a-turn-to-share-their-story-web-ready.jpg");
+  background: linear-gradient(0deg, rgba(0, 32, 96, 0.8) 0%), url("/everyone-gets-a-turn-to-share-their-story-web-ready.jpg");
   color: white;
   display: flex;
   align-items: center;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  min-height: 70vh;
+  min-height: 75vh;
 }
 
 #homeAffiliation {
@@ -21109,12 +21109,12 @@ textarea.form-control-lg {
 #homeWhatWeDo {
   background: linear-gradient(290deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.85) 50%), url("/people-in-a-supportive-meeting-group-web-ready.jpg");
   background-size: cover;
-  background-position: center right;
+  background-position: center center;
   background-repeat: no-repeat;
 }
 
 #homeGetCertified {
-  background-color: var(--bs-blue);
+  background-color: #121212;
   background-image: url("../logos/masterkey-icon-white-25.png");
   background-blend-mode: soft-light;
   background-size: cover;
@@ -21124,12 +21124,12 @@ textarea.form-control-lg {
 }
 
 .statCard {
-  background-color: rgb(3.25, 27.5, 63.25);
+  background-color: #121212;
   color: var(--bs-blue-text-emphasis);
   text-align: center;
   line-height: 0.5rem;
-  border: 4px solid var(--bs-primary);
-  border-radius: 1rem;
+  border: 1px solid var(--bs-primary);
+  border-radius: 0.75rem;
   padding: 1.5rem;
 }
 
@@ -21143,29 +21143,17 @@ textarea.form-control-lg {
   font-size: 1rem;
 }
 
-.testimonialSlider {
-  color: white;
-  background-color: rgb(3.25, 27.5, 63.25);
-  padding: 4rem;
-  border: 4px solid var(--bs-primary);
-  border-radius: 1rem;
-  min-height: 384px;
+@media only screen and (max-width: 991px) {
+  #homeWhatWeDo {
+    padding-top: 65%;
+    background: url("/people-in-a-supportive-meeting-group-web-ready.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top;
+  }
 }
-
-.testimonialStars {
-  font-size: 0.875rem;
-  color: yellow;
-  margin-right: 0.5rem;
-}
-
-.testimonialText {
-  font-size: 0.875rem;
-}
-
-.testimonialName {
-  font-weight: bold;
-}
-
 #aboutHero {
   text-align: center;
   background: url("/background-blue.jpg");
@@ -21175,7 +21163,7 @@ textarea.form-control-lg {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  min-height: 70vh;
+  min-height: 75vh;
 }
 
 #aboutWhatWeDo {
@@ -21215,6 +21203,20 @@ textarea.form-control-lg {
   font-size: 1rem;
 }
 
+@media only screen and (max-width: 991px) {
+  #aboutHero {
+    text-align: start;
+  }
+  #aboutWhatWeDo {
+    padding-top: 50%;
+    background: url("/man-smiles-with-group-session-in-the-background-web-ready.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top;
+  }
+}
 #programsHero {
   text-align: center;
   color: white;
@@ -21279,6 +21281,36 @@ footer {
   text-align: right;
 }
 
+.testimonialSlider {
+  color: white;
+  background-color: #121212;
+  padding: 4rem;
+  border: 1px solid var(--bs-primary);
+  border-radius: 0.75rem;
+  min-height: 384px;
+}
+
+.testimonialStars {
+  font-size: 0.875rem;
+  color: yellow;
+  margin-right: 0.5rem;
+}
+
+.testimonialText {
+  font-size: 0.875rem;
+}
+
+.testimonialName {
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 767px) {
+  .testimonials .prehead,
+  .testimonials h2,
+  .testimonials .h2 {
+    text-align: center;
+  }
+}
 p:last-of-type {
   margin-bottom: 0;
 }

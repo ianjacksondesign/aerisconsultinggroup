@@ -24,7 +24,7 @@ export default function Footer() {
             </Col>
             <Col xs="auto" className="my-3 my-md-0">
               <Nav className="justify-content-center">
-                <Row className="flex-column flex-md-row justify-content-center align-items-center align-items-md-start text-center text-md-start">
+                <Row className="flex-column flex-md-row justify-content-center align-items-center align-items-md-start text-center text-md-start g-5">
                   <Col>
                     <Nav.Item>
                       <h2 className="footerNavHeader">Programs</h2>
@@ -96,19 +96,49 @@ export default function Footer() {
             <Col md="auto">
               <Row className="flex-nowrap justify-content-center">
                 <Col xs="auto">
-                  <i className="bi bi-facebook"></i>
+                  <a
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                    className="link-primary"
+                  >
+                    <i className="bi bi-facebook"></i>
+                  </a>
                 </Col>
                 <Col xs="auto">
-                  <i className="bi bi-instagram"></i>
+                  <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    className="link-primary"
+                  >
+                    <i className="bi bi-instagram"></i>
+                  </a>
                 </Col>
                 <Col xs="auto">
-                  <i className="bi bi-linkedin"></i>
+                  <a
+                    href="https://www.linkedin.com/"
+                    target="_blank"
+                    className="link-primary"
+                  >
+                    <i className="bi bi-linkedin"></i>
+                  </a>
                 </Col>
                 <Col xs="auto">
-                  <i className="bi bi-twitter-x"></i>
+                  <a
+                    href="https://www.x.com/"
+                    target="_blank"
+                    className="link-primary"
+                  >
+                    <i className="bi bi-twitter-x"></i>
+                  </a>
                 </Col>
                 <Col xs="auto">
-                  <i className="bi bi-youtube"></i>
+                  <a
+                    href="https://www.youtube.com/"
+                    target="_blank"
+                    className="link-primary"
+                  >
+                    <i className="bi bi-youtube"></i>
+                  </a>
                 </Col>
               </Row>
             </Col>

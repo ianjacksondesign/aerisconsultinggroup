@@ -8,7 +8,7 @@ import aerisLogo from "/src/assets/logos/aeris-group-logo.svg";
 export default function Header() {
   return (
     <>
-      <header className="bg-dark sticky-top">
+      <header className="bg-dark sticky-top border-bottom border-primary border-3 shadow-sm">
         <Container fluid="xxl">
           <Navbar expand="lg" data-bs-theme="dark">
             <Navbar.Brand href="/" preventScrollReset={true}>

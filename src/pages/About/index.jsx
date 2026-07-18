@@ -27,9 +27,9 @@ export default function About() {
           </h1>
           <p className="fs-5">
             A Colorado-chartered professional development company
-            <br />
-            building the credentialed workforce behind
-            <br />
+            <br className="d-none d-md-block" />
+            building the credentialed workforce behind{" "}
+            <br className="d-none d-md-block" />
             recovery, crisis response, and community advocacy.
           </p>
         </Container>
@@ -60,9 +60,10 @@ export default function About() {
               </p>
             </Col>
             <Col lg={1}>
-              <div className="d-flex justify-content-center align-items-stretch h-100">
+              <div className="d-none d-md-flex justify-content-center align-items-stretch h-100">
                 <div className="vr text-primary"></div>
               </div>
+              <hr className="border-primary my-5 d-md-none" />
             </Col>
             <Col lg={5}>
               <div>
@@ -82,7 +83,7 @@ export default function About() {
         <Container className="py-5 py-lg-6">
           <p className="prehead">Our Leadership</p>
           <h2 className="text-center mb-5">Meet the Team</h2>
-          <Row>
+          <Row className="g-5">
             <Col lg={4}>
               <div className="d-flex flex-column justify-content-center text-center">
                 <img
@@ -121,7 +122,7 @@ export default function About() {
       </section>
       <section id="aboutByTheNumbers">
         <Container fluid="xl" className="py-5 py-lg-6">
-          <Row className="align-items-center">
+          <Row className="align-items-center g-5">
             <Col lg={6}>
               <h2 className="prehead">By the Numbers</h2>
               <p className="h2">
@@ -130,17 +131,17 @@ export default function About() {
                 Advanced Peer Recovery Specialist Program
               </p>
               <p className="mb-4 fs-5">
-                Results from the 2025–2026 program year,
-                <br />
+                Results from the 2025–2026 program year,{" "}
+                <br className="d-none d-md-block" />
                 drawn from 225 participant evaluations.
               </p>
-              <Button as="a" variant="primary">
+              <Button as="a" href="#/programs" variant="primary">
                 View Program
               </Button>
             </Col>
             <Col lg={6}>
               <Row className="g-3">
-                <Col lg={6}>
+                <Col sm={6}>
                   <Card className="statCard">
                     <h3>
                       <span className="statCardNumber">340</span>
@@ -151,7 +152,7 @@ export default function About() {
                     </h3>
                   </Card>
                 </Col>
-                <Col lg={6}>
+                <Col sm={6}>
                   <Card className="statCard">
                     <h3>
                       <span className="statCardNumber">332</span>
@@ -162,7 +163,7 @@ export default function About() {
                     </h3>
                   </Card>
                 </Col>
-                <Col lg={6}>
+                <Col sm={6}>
                   <Card className="statCard">
                     <h3>
                       <span className="statCardNumber">97.6%</span>
@@ -173,7 +174,7 @@ export default function About() {
                     </h3>
                   </Card>
                 </Col>
-                <Col lg={6}>
+                <Col sm={6}>
                   <Card className="statCard">
                     <h3>
                       <span className="statCardNumber">4.8/5</span>

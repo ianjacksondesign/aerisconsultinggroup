@@ -15,3 +15,35 @@
     text-align: right;
   }
 }
+
+.testimonialSlider {
+  color: white;
+  background-color: $dark;
+  padding: 4rem;
+  border: 1px solid var(--bs-primary);
+  border-radius: 0.75rem;
+  min-height: 384px;
+}
+
+.testimonialStars {
+  font-size: 0.875rem;
+  color: yellow;
+  margin-right: 0.5rem;
+}
+
+.testimonialText {
+  font-size: 0.875rem;
+}
+
+.testimonialName {
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 767px) {
+  .testimonials {
+    .prehead,
+    h2 {
+      text-align: center;
+    }
+  }
+}

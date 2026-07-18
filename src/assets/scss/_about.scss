@@ -47,3 +47,17 @@
     font-size: 1rem;
   }
 }
+
+@media only screen and (max-width: 991px) {
+  #aboutHero {
+    text-align: start;
+  }
+
+  #aboutWhatWeDo {
+    padding-top: 50%;
+    background: url("/man-smiles-with-group-session-in-the-background-web-ready.jpg");
+    @include fullImageBackground;
+    background-size: contain;
+    background-position: center top;
+  }
+}
