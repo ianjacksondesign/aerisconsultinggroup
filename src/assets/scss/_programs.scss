@@ -1,27 +1,8 @@
 #programsHero {
-  text-align: center;
-  color: white;
-  display: flex;
-  align-items: center;
   background:
-    linear-gradient(
-      180deg,
-      rgba(0, 32, 96, 0.8) 0%,
-      rgba(0, 32, 96, 0.8) 68%,
-      rgba(255, 255, 255, 1) 68%
-    ),
-    url("../images/support-group-meeting-in-a-bright-room-web-ready.jpg");
-  @include fullImageBackground;
-
-  .programBoxIcons {
-    color: $primary;
-    font-size: 4rem;
-  }
-
-  h2 {
-    font-size: 1rem;
-    text-transform: uppercase;
-  }
+    linear-gradient(0deg, rgba(0, 32, 96, 0.8) 0%),
+    url("/support-group-meeting-in-a-bright-room-web-ready.jpg");
+  @include hero;
 }
 
 .courseDetailsBox {
@@ -34,4 +15,25 @@
     font-size: 1rem;
     text-transform: uppercase;
   }
+}
+
+#programsByTheNumbers,
+#programsFoundationsVsMasterkey,
+#programsCompetencies {
+  background-color: var(--bs-primary-bg-subtle);
+  color: black;
+
+  h3 {
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+}
+
+#programsFoundationsVsMasterkey {
+  background-color: white;
+}
+
+#programsCompetencies {
+  background: url("/background-black.jpg");
+  color: white;
 }

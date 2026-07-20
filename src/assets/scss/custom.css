@@ -21099,7 +21099,6 @@ textarea.form-control-lg {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  min-height: 75vh;
 }
 
 #homeAffiliation {
@@ -21125,17 +21124,30 @@ textarea.form-control-lg {
 
 .statCard {
   background-color: #121212;
-  color: var(--bs-blue-text-emphasis);
+  color: white;
   text-align: center;
   line-height: 0.5rem;
   border: 1px solid var(--bs-primary);
   border-radius: 0.75rem;
   padding: 1.5rem;
 }
+.statCard .bi {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: #c7a348;
+}
+.statCard h3, .statCard .h3 {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+.statCard p {
+  font-size: 0.875rem;
+  line-height: 1.5em;
+}
 
 .statCardNumber {
   font-size: 4rem;
-  color: rgb(227, 209, 163.5);
+  color: #c7a348;
 }
 
 .statCardSubHead {
@@ -21163,7 +21175,6 @@ textarea.form-control-lg {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  min-height: 75vh;
 }
 
 #aboutWhatWeDo {
@@ -21191,7 +21202,10 @@ textarea.form-control-lg {
   background: url("/background-black.jpg");
 }
 
-#aboutByTheNumbers {
+#aboutByTheNumbers,
+#programsByTheNumbers,
+#programsFoundationsVsMasterkey,
+#programsCompetencies {
   background-image: url("/background-blue.jpg");
   background-blend-mode: soft-light;
   background-size: cover;
@@ -21199,7 +21213,10 @@ textarea.form-control-lg {
   background-repeat: no-repeat;
   color: white;
 }
-#aboutByTheNumbers .prehead {
+#aboutByTheNumbers .prehead,
+#programsByTheNumbers .prehead,
+#programsFoundationsVsMasterkey .prehead,
+#programsCompetencies .prehead {
   font-size: 1rem;
 }
 
@@ -21218,22 +21235,13 @@ textarea.form-control-lg {
   }
 }
 #programsHero {
-  text-align: center;
+  background: linear-gradient(0deg, rgba(0, 32, 96, 0.8) 0%), url("/support-group-meeting-in-a-bright-room-web-ready.jpg");
   color: white;
   display: flex;
   align-items: center;
-  background: linear-gradient(180deg, rgba(0, 32, 96, 0.8) 0%, rgba(0, 32, 96, 0.8) 68%, rgb(255, 255, 255) 68%), url("../images/support-group-meeting-in-a-bright-room-web-ready.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-}
-#programsHero .programBoxIcons {
-  color: #c7a348;
-  font-size: 4rem;
-}
-#programsHero h2, #programsHero .h2 {
-  font-size: 1rem;
-  text-transform: uppercase;
 }
 
 .courseDetailsBox {
@@ -21245,6 +21253,30 @@ textarea.form-control-lg {
 .courseDetailsBox h2, .courseDetailsBox .h2 {
   font-size: 1rem;
   text-transform: uppercase;
+}
+
+#programsByTheNumbers,
+#programsFoundationsVsMasterkey,
+#programsCompetencies {
+  background-color: var(--bs-primary-bg-subtle);
+  color: black;
+}
+#programsByTheNumbers h3, #programsByTheNumbers .h3,
+#programsFoundationsVsMasterkey h3,
+#programsFoundationsVsMasterkey .h3,
+#programsCompetencies h3,
+#programsCompetencies .h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+#programsFoundationsVsMasterkey {
+  background-color: white;
+}
+
+#programsCompetencies {
+  background: url("/background-black.jpg");
+  color: white;
 }
 
 footer {

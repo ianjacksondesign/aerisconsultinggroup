@@ -18,7 +18,7 @@ export default function About() {
   return (
     <>
       <section id="aboutHero">
-        <Container fluid="xl">
+        <Container fluid="xl" className="py-5 py-lg-6">
           <p className="prehead">Aeris Consulting Group • Chartered 2023</p>
           <h1>
             Human Life is Infinitely Valuable,

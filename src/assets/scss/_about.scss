@@ -38,7 +38,10 @@
   background: url("/background-black.jpg");
 }
 
-#aboutByTheNumbers {
+#aboutByTheNumbers,
+#programsByTheNumbers,
+#programsFoundationsVsMasterkey,
+#programsCompetencies {
   background-image: url("/background-blue.jpg");
   background-blend-mode: soft-light;
   @include fullImageBackground;

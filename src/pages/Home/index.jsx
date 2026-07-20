@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <>
       <section id="homeHero">
-        <Container fluid="xl" className="py-5 py-md-0">
+        <Container fluid="xl" className="py-5 py-lg-6">
           <Row className="justify-content-center text-md-center">
             <Col lg="auto">
               <p className="prehead">
@@ -98,7 +98,7 @@ export default function Home() {
                   long process of rebuilding meaningful lives.
                 </strong>
               </p>
-              <Button as="a" href="#/programs" variant="primary">
+              <Button as="a" href="#/programs" variant="outline-dark">
                 Learn More About Us
               </Button>
             </Col>
@@ -120,7 +120,7 @@ export default function Home() {
                 situations are complex, emotional, charged, and time-sensitive.
               </p>
               <Button as="a" variant="primary">
-                View Program
+                View Program Information
               </Button>
             </Col>
             <Col lg={6}>
