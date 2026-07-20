@@ -92,3 +92,7 @@ p:last-of-type {
   @include fullImageBackground;
   color: white;
 }
+
+.text-small {
+  font-size: 0.75rem;
+}

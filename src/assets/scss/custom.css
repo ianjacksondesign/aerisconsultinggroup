@@ -21364,4 +21364,8 @@ p:last-of-type {
   background-position: center center;
   background-repeat: no-repeat;
   color: white;
+}
+
+.text-small {
+  font-size: 0.75rem;
 }/*# sourceMappingURL=custom.css.map */
