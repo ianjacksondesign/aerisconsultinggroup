@@ -70,6 +70,10 @@ $bootstrap-icons-font-dir: "~bootstrap-icons/font/fonts";
 @import "./footer";
 @import "./testimonials";
 
+body {
+  overflow-x: hidden;
+}
+
 p:last-of-type {
   margin-bottom: 0;
 }

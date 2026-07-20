@@ -104,9 +104,9 @@ export default function Programs() {
               </p>
             </Col>
             <Col>
-              <Row className="justify-content-center align-items-stretch">
+              <Row className="justify-content-center align-items-stretch g-3">
                 <Col>
-                  <div className="rounded-3 bg-transparent border border-dark-subtle p-5 mb-3 mb-lg-0 h-100">
+                  <div className="rounded-3 bg-transparent border border-dark-subtle p-5 h-100">
                     <h3>Certification Funnel</h3>
                     <ListGroup variant="flush">
                       <ListGroup.Item className="bg-transparent ps-0 border-bottom border-dark border-opacity-25">
@@ -180,9 +180,9 @@ export default function Programs() {
               </p>
             </Col>
             <Col>
-              <Row className="justify-content-center">
+              <Row className="justify-content-center g-3">
                 <Col>
-                  <div className="rounded-3 bg-primary-subtle p-5 mb-3 mb-lg-0 h-100">
+                  <div className="rounded-3 bg-primary-subtle p-5 h-100">
                     <h3>Foundational Trainings</h3>
                     <ListGroup variant="flush">
                       <ListGroup.Item className="bg-transparent ps-0 border-bottom border-dark border-opacity-25">

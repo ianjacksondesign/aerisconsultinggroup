@@ -21343,6 +21343,10 @@ footer {
     text-align: center;
   }
 }
+body {
+  overflow-x: hidden;
+}
+
 p:last-of-type {
   margin-bottom: 0;
 }
