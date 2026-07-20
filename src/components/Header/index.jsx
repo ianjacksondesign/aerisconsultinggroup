@@ -11,7 +11,7 @@ export default function Header() {
       <header className="bg-dark sticky-top border-bottom border-primary border-3 shadow-sm">
         <Container fluid="xxl">
           <Navbar expand="lg" data-bs-theme="dark">
-            <Navbar.Brand href="/" preventScrollReset={true}>
+            <Navbar.Brand href="#/" preventScrollReset={true}>
               <img
                 src={aerisLogo}
                 alt="Aeris Consulting Group logo"
@@ -23,8 +23,8 @@ export default function Header() {
             <Navbar.Collapse id="navbar">
               <Nav activeKey={location.pathname} className="ms-auto">
                 <Nav.Link
-                  eventKey="/"
-                  href="/"
+                  eventKey="#/"
+                  href="#/"
                   className="me-4"
                   preventScrollReset={true}
                 >
